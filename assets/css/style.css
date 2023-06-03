@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Maven Pro";
+  src: url("../font/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+}
+
+/* === GLOBAL-SETTINGS === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --first_color: blue;
+  --font_maven: "Maven Pro";
+  --fourth_color: #52525207;
+  --second_color: aquamarine;
+  --third_color: #525252;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  font-family: var(--font_maven);
+  height: 100vh;
+  width: 100vw;
+}
+
+/* === HEADER === */
+
+h1 {
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 5rem;
+  padding-top: 5rem;
+  text-align: center;
+
+  background-image: linear-gradient(
+    90deg,
+    var(--first_color),
+    var(--second_color)
+  );
+}
+
+/* === MAIN === */
+
+.container {
+  background-color: var(--fourth_color);
+  border-radius: 10px;
+  color: var(--third_color);
+  display: inline-block;
+  margin-left: 2.5%;
+  margin-top: 5rem;
+  padding: 30px 0;
+  text-align: center;
+  width: 30%;
+}
+
+.container > h2 {
+  font-size: 2.8rem;
+  padding-bottom: 30px;
+}
+
+.container > img {
+  aspect-ratio: 16/9;
+  border: 1px solid var(--third_color);
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 80%;
+}
+
+.container > a {
+  border: 3px solid var(--third_color);
+  border-radius: 10px;
+  color: var(--third_color);
+  display: inline-block;
+  font-size: 2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* === HOVER-EFFEKTE === */
+
+.container:hover {
+  background-color: var(--fourth_color);
+  color: black;
+}
+
+.container:hover > img {
+  box-shadow: 0 0 10px 2px var(--third_color);
+}
+
+.container:hover > a {
+  border: 3px solid black;
+  color: black;
+}
+
+.container > a:hover {
+  border: 3px solid var(--second_color);
+  box-shadow: 0 0 10px 2px var(--second_color);
+  color: var(--second_color);
+}

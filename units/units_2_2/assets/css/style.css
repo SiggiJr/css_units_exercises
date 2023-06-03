@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto";
+}
+
+body {
+  width: 1440px;
+}
+
+main {
+  background-image: url("../img/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+h1 {
+  background-color: rgba(128, 128, 128, 0.344);
+  color: white;
+  font-size: 3rem;
+  padding: 5vh;
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
+}

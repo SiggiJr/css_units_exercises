@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Maven Pro";
+  src: url("../fonts/Maven_Pro/MavenPro-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Gilda Display";
+  src: url("../fonts/Gilda_Display/GildaDisplay-Regular.ttf");
+}
+
+/* === Global-Settings ==== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font_Gilda: "Gilda Display";
+  --font_Maven: "Maven Pro";
+  --font_Times: "Times";
+}
+
+body {
+  width: 89.0625rem;
+  /* width: 89.078rem; 1425px */
+}
+
+/* === Header === */
+
+.header_section {
+  background-color: #333;
+  font-family: var(--font_Maven);
+}
+
+.text_left_corner {
+  color: #949494;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding-left: 1.25rem;
+  padding-top: 0.9375rem;
+}
+
+.main_heading {
+  background: linear-gradient(45deg, #ff00ff79 20%, #2727f0e0 60%, #48cefa);
+  border-radius: 5px;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  width: 18.75rem;
+}
+
+.main_heading > h1 {
+  font-family: var(--font_Gilda);
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.main_heading > h1::first-line {
+  line-height: 5rem;
+}
+
+.main_heading > p {
+  margin-top: 1.5625rem;
+  padding-bottom: 1.25rem;
+}
+
+.header_links {
+  padding-bottom: 11.1875rem;
+  padding-right: 0.1875rem;
+  text-align: right;
+}
+
+.header_links li {
+  margin-bottom: 1rem;
+}
+
+.header_links li:last-of-type {
+  margin-bottom: 0;
+}
+
+.header_links a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+
+/* === MAIN === */
+
+.main_section {
+  font-family: var(--font_Times);
+  padding-left: 3.125rem;
+  padding-top: 24.0625rem;
+}
+
+.projects_text {
+  position: relative;
+}
+
+.projects_text .background_heading {
+  color: rgb(244, 251, 251);
+  font-size: 8.75rem;
+  font-weight: 700;
+  padding-bottom: 0;
+  position: absolute;
+  top: -110px;
+  z-index: -1;
+}
+
+.projects_text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-bottom: 3.5rem;
+  position: relative;
+}
+
+.projects_text p {
+  font-family: var(--font_Maven);
+  padding-bottom: 13.5rem;
+  width: 43.2287rem;
+}
+
+.project_examples {
+  padding-bottom: 5rem;
+  padding-left: 21.7188rem;
+}
+
+.project_examples:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+.project_examples img {
+  display: block;
+  padding-bottom: 2.25rem;
+}
+
+.project_examples a {
+  color: black;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+/* === HOVER-EFFEKTE === */
+
+.main_heading:hover {
+  background: linear-gradient(45deg, #48cefa 20%, #2727f0e0 60%, #ff00ff79);
+}
+
+.header_links li > a:hover {
+  color: white;
+  text-shadow: 0 0 10px white;
+}
